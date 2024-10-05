@@ -10,7 +10,7 @@ export default function Home() {
   const router = useRouter();
   
   const onClick = () =>  {
-    router.push('/Setting');
+    router.push('/(tabs)/Setting');
   }
   return (
     <View style={{
