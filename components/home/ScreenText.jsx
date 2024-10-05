@@ -4,14 +4,14 @@ import React from 'react'
 import { useFonts } from 'expo-font'
 
 export default function ScreenText() {
-   const[ loaded ]=  useFonts({
+    const[ loaded ]=  useFonts({
         'Kanit-Regular' : require('../../assets/fonts/Kanit-Regular.ttf'),
         'Kanit-SemiBold' : require('../../assets/fonts/Kanit-SemiBold.ttf'),
         'Kanit-Medium' : require('../../assets/fonts/Kanit-Medium.ttf')
     })
     
     if(!loaded){
-        <ActivityIndicator  size="large" color="#00ff00"  />
+        return <ActivityIndicator  size="large" color="#00ff00"  />
     }
 
   return (

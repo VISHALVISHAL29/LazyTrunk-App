@@ -1,7 +1,9 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet, Platform, FlatList } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function CustomButtons() {
+  const router = useRouter();
   const buttonData = [
     {
       id: 1,
@@ -25,13 +27,15 @@ export default function CustomButtons() {
       textColor: '#000',
     }
   ];
-
+  const onClick = () => {
+    router.push('/(tabs)/Deck')
+   }
   return (
     <View style={styles.container}>
       <FlatList
         data={buttonData}
         renderItem={({ item }) => (
-          <TouchableOpacity style={[styles.button, { backgroundColor: item.bgColor }]}>
+          <TouchableOpacity style={[styles.button, { backgroundColor: item.bgColor }]} onPress={item.name==='Play'?onClick:''}>
             <Image source={item.icon} style={styles.icon} />
             <Text style={[styles.buttonText, { color: item.textColor }]}>{item.name}</Text>
           </TouchableOpacity>
