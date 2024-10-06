@@ -38,7 +38,6 @@ export default function ScreenText() {
               fontFamily: 'Kanit-SemiBold',
               textAlign: 'center',
               color: '#f56905',
-              textDecorationLine:'underline'
           }}
           > EVER </Text>
         </View>

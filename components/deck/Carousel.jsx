@@ -118,14 +118,14 @@ const styles = StyleSheet.create({
     },
     largeImageContainer: {
         width: '100%',
-        height: 100, // Larger size for subscription:true
+        height: 150, // Larger size for subscription:true
         borderRadius: 10,
         overflow: 'hidden',
         marginBottom: 10,
     },
     smallImageContainer: {
-        width: '100%',
-        height: 100, // Smaller size for subscription:false
+        width: '80%',
+        height: 150, // Smaller size for subscription:false
         borderRadius: 10,
         overflow: 'hidden',
         marginBottom: 10,
@@ -133,12 +133,11 @@ const styles = StyleSheet.create({
     largeImage: {
         width: '100%',
         height: '100%',
-        resizeMode: 'contain', // Ensure the image fills the container properly
     },
     smallImage: {
         width: '100%',
         height: '100%',
-        resizeMode: 'contain', // Ensure the image fills the container properly
+        
     },
     cardName: {
         color: '#fff',

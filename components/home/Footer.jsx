@@ -7,9 +7,10 @@ export default function Footer() {
   const onClick = () => {
     Linking.openURL('https://www.instagram.com/lazytrunk_games/'); // Open the URL
   };
+  
   return (
     <View style={styles.footerContainer}>
-      {/* Left side: Rocket icon and FOLLOW US button */}
+      {/* Left Side: Follow Us Button */}
       <View style={styles.footerItem}>
         <Fontisto name="rocket" size={24} color="white" />
         <TouchableOpacity style={styles.button} onPress={onClick}>
@@ -17,7 +18,7 @@ export default function Footer() {
         </TouchableOpacity>
       </View>
 
-      {/* Right side: Game icon and MORE GAMES button */}
+      {/* Right Side: More Games Button */}
       <View style={styles.footerItem}>
         <Image 
           source={require('../../assets/devImage/game.png')} 
@@ -37,11 +38,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 10,
-    position: 'absolute',  // Sticks it to the bottom
-    bottom: 0,
+    position: 'absolute',  // Stick it to the bottom
+    bottom: 20,            // Adjusted so it's visible
     left: 0,
     right: 0,
-    
+    backgroundColor: 'transparent',  // Transparent background
   },
   footerItem: {
     flexDirection: 'row',
@@ -66,6 +67,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     backgroundColor: '#fff',
     padding: 5,
-    borderRadius:30  
+    borderRadius: 30,
   },
 });
+
