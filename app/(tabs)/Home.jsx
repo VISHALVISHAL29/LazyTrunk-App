@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   settingsIcon: {
     position: 'absolute',
-    top: 20,
+    top: 60,
     right: 20,
   },
   mainContent: {
