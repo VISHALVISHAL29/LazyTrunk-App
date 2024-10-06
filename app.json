@@ -17,7 +17,7 @@
       "bundleIdentifier": "com.vishal.assignmentApp"
     },
     "android": {
-      "package": "com.vishal.assignmentApp", 
+      "package": "com.vishal.assignmentApp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -34,8 +34,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5f4596fc-9c6b-458e-9d3e-9512037a30d2"
+      }
     }
   }
 }
-
-

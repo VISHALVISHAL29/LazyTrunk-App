@@ -1,14 +1,18 @@
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet, Linking } from 'react-native';
 import React from 'react';
 import Fontisto from '@expo/vector-icons/Fontisto';
 
 export default function Footer() {
+  
+  const onClick = () => {
+    Linking.openURL('https://www.instagram.com/lazytrunk_games/'); // Open the URL
+  };
   return (
     <View style={styles.footerContainer}>
       {/* Left side: Rocket icon and FOLLOW US button */}
       <View style={styles.footerItem}>
         <Fontisto name="rocket" size={24} color="white" />
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onClick}>
           <Text style={styles.buttonText}>FOLLOW US</Text>
         </TouchableOpacity>
       </View>
