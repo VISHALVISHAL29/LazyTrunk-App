@@ -4,6 +4,7 @@ import React from 'react'
 import ScreenText from '../../components/home/ScreenText'
 import Pressables from '../../components/home/Pressables';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import Footer from '../../components/home/Footer'
 import { useRouter } from 'expo-router';
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
     </Pressable>
     <ScreenText/>
     <Pressables/>
+    <Footer/>
     </View>
   )
 }

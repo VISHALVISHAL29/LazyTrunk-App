@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
     letterSpacing: 5,
     marginLeft: 20,
     padding: 20,
+    fontWeight:'bold'
   },
   filterContainer: {
     flexDirection: 'row',
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
   filterName: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#000',
   },
   cardCount: {
     fontSize: 12,

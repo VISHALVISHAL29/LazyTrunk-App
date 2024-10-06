@@ -3,7 +3,8 @@ import { Pressable, Text, TouchableOpacity, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Language from '../../components/settings/Language';
 import Modes from '../../components/settings/Modes';
-import Purchases from '../../components/settings/Purchases'
+import Purchases from '../../components/settings/Purchases';
+import Footer from '../../components/settings/Footer';
 
 export default function Setting() {
   return (
@@ -103,6 +104,19 @@ export default function Setting() {
             alignItems: 'center'
           }}>
             <Purchases/>
+          </View>
+        </View>
+        {/* purchase component */}
+        <View style={{
+            marginTop: 60, 
+            alignItems: 'center',
+            width: '100%'
+        }}>
+          <View style={{
+            width: '100%',
+            alignItems: 'center'
+          }}>
+            <Footer/>
           </View>
         </View>
       </View>

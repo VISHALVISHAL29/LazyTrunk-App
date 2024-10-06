@@ -4,6 +4,7 @@ import { useRouter } from 'expo-router';
 
 export default function CustomButtons() {
   const router = useRouter();
+  
   const buttonData = [
     {
       id: 1,
@@ -11,6 +12,7 @@ export default function CustomButtons() {
       icon: require('../../assets/devImage/play-button.png'),
       bgColor: '#90ee90',  // Light green
       textColor: '#000',
+      route: '/(tabs)/Deck',  // Navigation route for "Play"
     },
     {
       id: 2,
@@ -27,15 +29,23 @@ export default function CustomButtons() {
       textColor: '#000',
     }
   ];
-  const onClick = () => {
-    router.push('/(tabs)/Deck')
-   }
+
+  // Handle navigation only for the "Play" button
+  const handlePress = (route) => {
+    if (route) {
+      router.push(route);  // Navigate to the provided route
+    }
+  };
+
   return (
     <View style={styles.container}>
       <FlatList
         data={buttonData}
         renderItem={({ item }) => (
-          <TouchableOpacity style={[styles.button, { backgroundColor: item.bgColor }]} onPress={item.name==='Play'?onClick:''}>
+          <TouchableOpacity 
+            style={[styles.button, { backgroundColor: item.bgColor }]} 
+            onPress={() => item.route && handlePress(item.route)}  // Only trigger for "Play"
+          >
             <Image source={item.icon} style={styles.icon} />
             <Text style={[styles.buttonText, { color: item.textColor }]}>{item.name}</Text>
           </TouchableOpacity>
@@ -84,4 +94,5 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
 });
+
 
