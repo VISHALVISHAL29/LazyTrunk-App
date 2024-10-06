@@ -48,3 +48,5 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Below is the link to the apk file uploaded on google drive :
+- https://drive.google.com/file/d/1FidKDiyJjyFnvPN2JfvJl040M4ypWUMb/view?usp=drive_link
